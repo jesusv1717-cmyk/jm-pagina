@@ -1,0 +1,119 @@
+/* =========================================
+   Variables y Paleta de Colores
+========================================= */
+:root {
+  --jm-navy: #0B1320; /* Azul marino muy oscuro del fondo del logo */
+  --jm-gold: #E8B931; /* Amarillo/Dorado de las letras JM */
+  --jm-gold-hover: #fcd555;
+}
+
+.bg-navy { background-color: var(--jm-navy) !important; }
+.text-navy { color: var(--jm-navy) !important; }
+.bg-gold { background-color: var(--jm-gold) !important; }
+.text-gold { color: var(--jm-gold) !important; }
+
+/* =========================================
+   Botones Personalizados
+========================================= */
+.btn-gold {
+  background-color: var(--jm-gold);
+  color: var(--jm-navy);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  background-color: var(--jm-gold-hover);
+  color: var(--jm-navy);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(232, 185, 49, 0.3);
+}
+
+/* Efecto hover para los botones desplegables de contacto */
+.btn-contact {
+    text-align: left;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-contact:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    transform: translateX(5px);
+}
+
+.btn-contact, .btn-contact:focus, .btn-contact:active {
+    color: inherit;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Botón de WhatsApp Flotante */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 32px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    color: #FFF;
+    transform: scale(1.1);
+}
+
+/* =========================================
+   Navegación y Hero Section
+========================================= */
+.nav-hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: color 0.3s ease;
+  position: relative;
+}
+.nav-hover:hover {
+  color: var(--jm-gold) !important;
+}
+
+.hero-section {
+  background-color: var(--jm-navy);
+  background-image: radial-gradient(circle at right center, rgba(232,185,49,0.1) 0%, transparent 50%);
+  min-height: 80vh;
+  border-bottom: 4px solid var(--jm-gold);
+}
+
+/* =========================================
+   Tarjetas, Animaciones y Detalles
+========================================= */
+.service-card, .project-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+}
+
+.service-card:hover, .project-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Efecto hover para las tarjetas del catálogo SVG */
+.transition-hover { 
+    transition: transform 0.3s; 
+} 
+
+.transition-hover:hover { 
+    transform: translateY(-10px); 
+}
+
+.border-gold { border-color: var(--jm-gold) !important; }
+.separator { height: 4px; width: 60px; border-radius: 2px; }
+.icon-box { width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; }
